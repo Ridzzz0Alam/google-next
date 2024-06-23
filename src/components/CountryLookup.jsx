@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 
 export default function CountryLookup() {
-  const [country, setCountry] = useState("Uganda");
+  const [country, setCountry] = useState("United States");
 
   useEffect(() => {
     const getCountry = async () => {
@@ -15,6 +15,7 @@ export default function CountryLookup() {
       if (!response) return;
       setCountry(response);
     };
+    //getCountry();
   }, []);
   return <div>{country}</div>;
 }
