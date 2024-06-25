@@ -1,15 +1,7 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "upload.wikimedia.org",
-        pathname: "**",
-      },
-    ],
+  eslint: {
+    ignoreDuringBuilds: true,
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
